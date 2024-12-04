@@ -1,0 +1,5 @@
+export const navigatinConstants = Object.freeze({
+  PRODUCT_LIST_SCREEN: 'PRODUCT_LIST_SCREEN',
+  PRODUCT_DETAILS_SCREEN: 'PRODUCT_DETAILS_SCREEN',
+  CART_SCREEN: ' CART_SCREEN',
+});

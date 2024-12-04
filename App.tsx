@@ -1,19 +1,16 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
+// In App.js in a new project
 
-import React from 'react';
-import {SafeAreaView} from 'react-native';
+import * as React from 'react';
+import {NavigationContainer} from '@react-navigation/native';
+import Main from './src/navigation/Main';
+import {CartProvider} from './src/context/cartContext';
 
-function App(): React.JSX.Element {
+export default function App() {
   return (
-    <SafeAreaView>
-      <Text>sdfsfd</Text>
-    </SafeAreaView>
+    <NavigationContainer>
+      <CartProvider>
+        <Main />
+      </CartProvider>
+    </NavigationContainer>
   );
 }
-
-export default App;
